@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="150dp"
         android:fontFamily="@font/nunito_extrabold"
         android:text="Which programming language is your favorite?"
         android:textAlignment="center"
+        android:textColor="#00897b"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/sb1"
@@ -43,6 +43,7 @@
         android:paddingStart="32dp"
         android:paddingEnd="0dp"
         android:text="Java"
+        android:textColor="#fff"
         app:layout_constraintEnd_toStartOf="@id/tvPercent1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvQuestion" />
@@ -57,6 +58,7 @@
         android:paddingStart="0dp"
         android:paddingEnd="32dp"
         android:text="25%"
+        android:textColor="#00897b"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvQuestion" />
 
@@ -82,6 +84,7 @@
         android:paddingStart="32dp"
         android:paddingEnd="0dp"
         android:text="Python"
+        android:textColor="#fff"
         app:layout_constraintEnd_toStartOf="@id/tvPercent2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sb1" />
@@ -96,6 +99,7 @@
         android:paddingStart="0dp"
         android:paddingEnd="32dp"
         android:text="25%"
+        android:textColor="#00897b"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sb1" />
 
@@ -121,6 +125,7 @@
         android:paddingStart="32dp"
         android:paddingEnd="0dp"
         android:text="Kotlin"
+        android:textColor="#fff"
         app:layout_constraintEnd_toStartOf="@id/tvPercent3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sb2" />
@@ -135,6 +140,7 @@
         android:paddingStart="0dp"
         android:paddingEnd="32dp"
         android:text="25%"
+        android:textColor="#00897b"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sb2" />
 
@@ -160,6 +166,7 @@
         android:paddingStart="32dp"
         android:paddingEnd="0dp"
         android:text="C#"
+        android:textColor="#fff"
         app:layout_constraintEnd_toStartOf="@id/tvPercent4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sb3" />
@@ -174,8 +181,24 @@
         android:paddingStart="0dp"
         android:paddingEnd="32dp"
         android:text="25%"
+        android:textColor="#00897b"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sb3" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/programming" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
