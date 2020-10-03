@@ -14,7 +14,7 @@
         android:fontFamily="@font/nunito_extrabold"
         android:text="Which programming language is your favorite?"
         android:textAlignment="center"
-        android:textColor="#00897b"
+        android:textColor="#009688"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/sb1"
